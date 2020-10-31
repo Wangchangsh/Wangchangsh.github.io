@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Thinking and doing">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="连锁不平衡是两个位点非自由组合的状态，简言之，一个位点的基因型能在一定程度上预测另一个位点的基因型。LD的度量程度主要有两种方式：\(D&#39;和r^2\)。 两等位 \(D&#39;\):  反应群体的重组历史 适用于研究群体连锁不平衡程度  \(r^2\):  反应等位基因相关程度 适用于GWAS     genotype A a sum">
+<meta property="og:type" content="article">
+<meta property="og:title" content="两位点连锁不平衡度分析">
+<meta property="og:url" content="http://yoursite.com/2020/10/31/%E4%B8%A4%E4%BD%8D%E7%82%B9%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E5%BA%A6%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="Thinking and doing">
+<meta property="og:description" content="连锁不平衡是两个位点非自由组合的状态，简言之，一个位点的基因型能在一定程度上预测另一个位点的基因型。LD的度量程度主要有两种方式：\(D&#39;和r^2\)。 两等位 \(D&#39;\):  反应群体的重组历史 适用于研究群体连锁不平衡程度  \(r^2\):  反应等位基因相关程度 适用于GWAS     genotype A a sum">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-31T11:24:21.000Z">
+<meta property="article:modified_time" content="2020-10-31T11:24:21.000Z">
 <meta property="article:author" content="Wang Pengfei">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2020/">
+<link rel="canonical" href="http://yoursite.com/2020/10/31/%E4%B8%A4%E4%BD%8D%E7%82%B9%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E5%BA%A6%E5%88%86%E6%9E%90/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | Thinking and doing</title>
+  <title>两位点连锁不平衡度分析 | Thinking and doing</title>
   
 
 
@@ -142,110 +146,137 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 4 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/31/%E4%B8%A4%E4%BD%8D%E7%82%B9%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E5%BA%A6%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wang Pengfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Thinking and doing">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          两位点连锁不平衡度分析
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-10-31 19:24:21" itemprop="dateCreated datePublished" datetime="2020-10-31T19:24:21+08:00">2020-10-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-31T19:26:22+08:00"
-              content="2020-10-31">
-          10-31
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/31/%E4%B8%A4%E4%BD%8D%E7%82%B9%E9%87%8D%E7%BB%84%E7%8E%87%E8%AE%A1%E7%AE%97/" itemprop="url">
-            <span itemprop="name">两位点重组率计算</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-31T19:24:21+08:00"
-              content="2020-10-31">
-          10-31
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/10/31/%E4%B8%A4%E4%BD%8D%E7%82%B9%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E5%BA%A6%E5%88%86%E6%9E%90/" itemprop="url">
-            <span itemprop="name">两位点连锁不平衡度分析</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-08-03T16:28:39+08:00"
-              content="2020-08-03">
-          08-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/08/03/%E5%88%86%E5%AD%90%E8%BF%9B%E5%8C%96%E5%BB%BA%E6%A8%A1/" itemprop="url">
-            <span itemprop="name">分子进化建模</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-10T19:38:45+08:00"
-              content="2020-07-10">
-          07-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/10/%E7%94%9F%E7%89%A9%E8%BF%9B%E5%8C%96%E2%80%94%E2%80%94%E5%88%86%E7%B1%BB%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%9F/" itemprop="url">
-            <span itemprop="name">生物进化——分类与系统发生</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <p>连锁不平衡是两个位点非自由组合的状态，简言之，一个位点的基因型能在一定程度上预测另一个位点的基因型。LD的度量程度主要有两种方式：<span class="math inline">\(D&#39;和r^2\)</span>。</p>
+<h2 id="两等位">两等位</h2>
+<p><span class="math inline">\(D&#39;\)</span>:</p>
+<ul>
+<li>反应群体的重组历史</li>
+<li>适用于研究群体连锁不平衡程度</li>
+</ul>
+<p><span class="math inline">\(r^2\)</span>:</p>
+<ul>
+<li>反应等位基因相关程度</li>
+<li>适用于GWAS</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">genotype</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">a</th>
+<th style="text-align: center;">sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">pAB</td>
+<td style="text-align: center;">paB</td>
+<td style="text-align: center;">pB</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">b</td>
+<td style="text-align: center;">pAb</td>
+<td style="text-align: center;">pab</td>
+<td style="text-align: center;">pb</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">sum</td>
+<td style="text-align: center;">pA</td>
+<td style="text-align: center;">pa</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(D=pAB-pA*pB\)</span> 或者 <span class="math inline">\(D=pab-pa*pb\)</span></p>
+<p>尽管D能充分体现出等位基因分离的随机性，但其数值取决于等位基因频率的大小。通过除以D在不同等位基因频率下所能达到的最大值（<span class="math inline">\(D_{max}\)</span>）对D值进行标准化，表示为<span class="math inline">\(D&#39;\)</span>。</p>
+<p><span class="math display">\[D&#39;=
+\begin{cases}
+\frac{D}{min(pA*pB,pa*pb)}&amp; \text{D &lt; 0}\\
+\frac{D}{min(pA*pb,pa*pB)}&amp; \text{D &gt; 0}\\
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[r^2=\frac{D^2}{pA*pa*pB*pb}\]</span></p>
+<p>在样本量较小的情况下<span class="math inline">\(r^2\)</span>所受影响比<span class="math inline">\(D&#39;\)</span>小。</p>
+<h2 id="多等位">多等位</h2>
+<p><span class="math display">\[D_{ij}=p_{ij}-p_i*p_j\]</span> <span class="math display">\[D&#39;_{ij}=
+\begin{cases}
+\frac{D_{ij}}{min(p_i*p_j,(1-p_i)(1-p_j))}&amp; \text{D &lt; 0}\\
+\frac{D_{ij}}{min(p_i(1-p_j),(1-p_i)*p_j)}&amp; \text{D &gt; 0}\\
+\end{cases}
+\]</span> <span class="math display">\[D&#39;=\sum_{i=1}^{k}\sum_{j=1}^mp_ip_j|D&#39;_{ij}|\]</span> <span class="math display">\[r^2_{ij}=\frac{D_{ij}^2}{p_i(1-p_i)p_j(1-p_j)}\]</span> <span class="math display">\[r^2=\sum_{i=1}^{k}\sum_{j=1}^mp_ip_jr^2_{ij}\]</span></p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/03/%E5%88%86%E5%AD%90%E8%BF%9B%E5%8C%96%E5%BB%BA%E6%A8%A1/" rel="prev" title="分子进化建模">
+      <i class="fa fa-chevron-left"></i> 分子进化建模
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/31/%E4%B8%A4%E4%BD%8D%E7%82%B9%E9%87%8D%E7%BB%84%E7%8E%87%E8%AE%A1%E7%AE%97/" rel="next" title="两位点重组率计算">
+      两位点重组率计算 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -298,6 +329,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A4%E7%AD%89%E4%BD%8D"><span class="nav-number">1.</span> <span class="nav-text">两等位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E7%AD%89%E4%BD%8D"><span class="nav-number">2.</span> <span class="nav-text">多等位</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
